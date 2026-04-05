@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root{
+    --color1: #155dfc;
+    --color2: #9810fa;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@property --deg{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes borderRotate {
+    0% {
+        --deg: 0deg;
+    }
+    100% {
+        --deg: 360deg;
+    }
+    
+}
+
+/* .homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 20px;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: var(--color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+} */
+
+/* .productsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.products-heading {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.allProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    display: block;
+    width: 300px;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background: linear-gradient(white) padding-box;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: borderRotate 1s infinite linear;
+    animation-play-state: paused;
+}
+
+.price{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+} */
+
+.product {
+    background: linear-gradient(white) padding-box;
+    transition: all 0.3s ease;
+    animation: borderRotate 1s infinite linear;
+    animation-play-state: paused;
+}
+
+.product:hover {
+    border: 2px solid transparent;
+    background: 
+    linear-gradient(white) padding-box,
+    conic-gradient(from var(--deg), transparent 0% 25%, var(--color1) 25% 50%, transparent 50% 75%, var(--color2) 75% 100%) border-box;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    animation-play-state: running;
+}
+
+/* .productDetailsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.productDetailsPage h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.productDetails {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.productDetails img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.productDetails-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productDetails-info .price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 191, 0);
+} */
